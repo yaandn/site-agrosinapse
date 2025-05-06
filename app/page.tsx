@@ -1,7 +1,7 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 import {
   Activity,
   BarChart3,
@@ -23,7 +23,7 @@ import {
   ScanLine,
   SproutIcon as Seedling,
   X,
-} from "lucide-react"
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -102,14 +102,15 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="space-y-6">
                 <div className="inline-flex items-center rounded-full border border-green-500/30 bg-green-500/10 px-3 py-1 text-sm text-green-400 dark:border-green-500/30 dark:bg-green-500/10 dark:text-green-400 light:border-green-600/30 light:bg-green-500/10 light:text-green-600">
-                  <Cpu className="mr-1 h-3 w-3" /> Tecnologia de ponta para o agronegócio
+                  <Cpu className="mr-1 h-3 w-3" /> Tecnologia de ponta para o
+                  agronegócio
                 </div>
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-white via-green-200 to-green-400 dark:from-white dark:via-green-200 dark:to-green-400 light:from-green-800 light:via-green-600 light:to-green-700">
                   Inteligência Artificial no Campo
                 </h1>
                 <p className="max-w-[600px] text-gray-400 md:text-xl dark:text-gray-400 light:text-gray-600">
-                  Análises inteligentes para decisões mais precisas na lavoura, potencializando sua produtividade com
-                  tecnologia de ponta.
+                  Análises inteligentes para decisões mais precisas na lavoura,
+                  potencializando sua produtividade com tecnologia de ponta.
                 </p>
                 <div className="flex flex-col gap-3 sm:flex-row">
                   <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 h-12 px-6 dark:from-green-500 dark:to-emerald-600 dark:hover:from-green-600 dark:hover:to-emerald-700 light:from-green-600 light:to-emerald-700 light:hover:from-green-700 light:hover:to-emerald-800">
@@ -134,7 +135,9 @@ export default function Home() {
                     ))}
                   </div>
                   <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
-                    <span className="font-medium text-green-400 dark:text-green-400 light:text-green-600">+500</span>{" "}
+                    <span className="font-medium text-green-400 dark:text-green-400 light:text-green-600">
+                      +500
+                    </span>{" "}
                     produtores rurais confiam em nós
                   </p>
                 </div>
@@ -164,10 +167,26 @@ export default function Home() {
             {/* Stats */}
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {[
-                { value: "98%", label: "Precisão na detecção de pragas", icon: Bug },
-                { value: "30%", label: "Aumento médio de produtividade", icon: LineChart },
-                { value: "24h", label: "Monitoramento contínuo", icon: Activity },
-                { value: "5TB", label: "Dados processados diariamente", icon: Brain },
+                {
+                  value: "98%",
+                  label: "Precisão na detecção de pragas",
+                  icon: Bug,
+                },
+                {
+                  value: "30%",
+                  label: "Aumento médio de produtividade",
+                  icon: LineChart,
+                },
+                {
+                  value: "24h",
+                  label: "Monitoramento contínuo",
+                  icon: Activity,
+                },
+                {
+                  value: "5TB",
+                  label: "Dados processados diariamente",
+                  icon: Brain,
+                },
               ].map((stat, i) => (
                 <div
                   key={i}
@@ -176,8 +195,12 @@ export default function Home() {
                   <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-green-500/10 dark:bg-green-500/10 light:bg-green-500/20">
                     <stat.icon className="h-5 w-5 text-green-400 dark:text-green-400 light:text-green-600" />
                   </div>
-                  <div className="text-2xl font-bold text-white dark:text-white light:text-green-800">{stat.value}</div>
-                  <div className="text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">{stat.label}</div>
+                  <div className="text-2xl font-bold text-white dark:text-white light:text-green-800">
+                    {stat.value}
+                  </div>
+                  <div className="text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </div>
@@ -218,15 +241,29 @@ export default function Home() {
                   Sobre a AgroSinapse
                 </h2>
                 <p className="text-gray-400 dark:text-gray-400 light:text-gray-600">
-                  A AgroSinapse desenvolve soluções digitais com foco em análise de lavouras, identificação de pragas e
-                  simulação de cenários. Nossa missão é transformar dados em insights valiosos para o produtor rural,
-                  tornando a tomada de decisão mais precisa e eficiente.
+                  A AgroSinapse desenvolve soluções digitais com foco em análise
+                  de lavouras, identificação de pragas e simulação de cenários.
+                  Nossa missão é transformar dados em insights valiosos para o
+                  produtor rural, tornando a tomada de decisão mais precisa e
+                  eficiente.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
                   {[
-                    { title: "Inovação", icon: Cpu, desc: "Tecnologia de ponta aplicada ao campo" },
-                    { title: "Simplicidade", icon: Layers, desc: "Interface intuitiva para todos os usuários" },
-                    { title: "Impacto", icon: Plant, desc: "Resultados mensuráveis na produtividade" },
+                    {
+                      title: "Inovação",
+                      icon: Cpu,
+                      desc: "Tecnologia de ponta aplicada ao campo",
+                    },
+                    {
+                      title: "Simplicidade",
+                      icon: Layers,
+                      desc: "Interface intuitiva para todos os usuários",
+                    },
+                    {
+                      title: "Impacto",
+                      icon: Plant,
+                      desc: "Resultados mensuráveis na produtividade",
+                    },
                   ].map((value, i) => (
                     <div
                       key={i}
@@ -235,8 +272,12 @@ export default function Home() {
                       <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-green-500/10 dark:bg-green-500/10 light:bg-green-500/20">
                         <value.icon className="h-6 w-6 text-green-400 dark:text-green-400 light:text-green-600" />
                       </div>
-                      <h3 className="font-medium text-white dark:text-white light:text-green-800">{value.title}</h3>
-                      <p className="mt-1 text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">{value.desc}</p>
+                      <h3 className="font-medium text-white dark:text-white light:text-green-800">
+                        {value.title}
+                      </h3>
+                      <p className="mt-1 text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">
+                        {value.desc}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -246,7 +287,10 @@ export default function Home() {
         </section>
 
         {/* Solutions Section */}
-        <section id="solucoes" className="w-full py-12 md:py-24 lg:py-32 relative">
+        <section
+          id="solucoes"
+          className="w-full py-12 md:py-24 lg:py-32 relative"
+        >
           <div className="absolute inset-0 z-0">
             <div className="absolute top-40 left-20 w-80 h-80 bg-green-500/10 rounded-full blur-3xl dark:bg-green-500/10 light:bg-green-500/20"></div>
             <div className="absolute bottom-20 right-20 w-60 h-60 bg-emerald-500/10 rounded-full blur-3xl dark:bg-emerald-500/10 light:bg-emerald-500/20"></div>
@@ -274,7 +318,11 @@ export default function Home() {
                   title: "Análise de Lavoura",
                   icon: Plant,
                   desc: "Monitoramento em tempo real da saúde das plantas, com alertas e recomendações personalizadas.",
-                  features: ["Mapeamento por satélite", "Análise de crescimento", "Previsão de colheita"],
+                  features: [
+                    "Mapeamento por satélite",
+                    "Análise de crescimento",
+                    "Previsão de colheita",
+                  ],
                   link: "/solucoes/analise-de-lavoura",
                   image:
                     "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -283,7 +331,11 @@ export default function Home() {
                   title: "Identificação de Pragas",
                   icon: Bug,
                   desc: "Detecção precoce de pragas e doenças através de imagens, com sugestões de tratamento.",
-                  features: ["Reconhecimento por IA", "Biblioteca de pragas", "Tratamentos recomendados"],
+                  features: [
+                    "Reconhecimento por IA",
+                    "Biblioteca de pragas",
+                    "Tratamentos recomendados",
+                  ],
                   link: "/solucoes/identificacao-de-pragas",
                   image:
                     "https://images.unsplash.com/photo-1626810333400-5c1c6a4a8d6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -292,7 +344,11 @@ export default function Home() {
                   title: "Simulação de Cenários",
                   icon: Brain,
                   desc: "Previsões baseadas em IA para diferentes condições climáticas e estratégias de manejo.",
-                  features: ["Modelos preditivos", "Análise de riscos", "Otimização de recursos"],
+                  features: [
+                    "Modelos preditivos",
+                    "Análise de riscos",
+                    "Otimização de recursos",
+                  ],
                   link: "/solucoes/simulacao-de-cenarios",
                   image:
                     "https://images.unsplash.com/photo-1581093196277-9f608bb3b511?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -301,7 +357,11 @@ export default function Home() {
                   title: "Análise de Solo",
                   icon: Microscope,
                   desc: "Avaliação detalhada da composição do solo para otimizar a fertilização e manejo.",
-                  features: ["Mapeamento de nutrientes", "Recomendações de correção", "Histórico de evolução"],
+                  features: [
+                    "Mapeamento de nutrientes",
+                    "Recomendações de correção",
+                    "Histórico de evolução",
+                  ],
                   link: "/solucoes/analise-de-solo",
                   image:
                     "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -310,7 +370,11 @@ export default function Home() {
                   title: "Gestão de Irrigação",
                   icon: CloudRain,
                   desc: "Controle inteligente da irrigação baseado em dados climáticos e necessidades da cultura.",
-                  features: ["Economia de água", "Programação automática", "Alertas de déficit hídrico"],
+                  features: [
+                    "Economia de água",
+                    "Programação automática",
+                    "Alertas de déficit hídrico",
+                  ],
                   link: "/solucoes/gestao-de-irrigacao",
                   image:
                     "https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -319,7 +383,11 @@ export default function Home() {
                   title: "Dashboard Analítico",
                   icon: BarChart3,
                   desc: "Visualização centralizada de todos os dados da propriedade para tomada de decisão.",
-                  features: ["Relatórios personalizados", "Exportação de dados", "Comparativos de safra"],
+                  features: [
+                    "Relatórios personalizados",
+                    "Exportação de dados",
+                    "Comparativos de safra",
+                  ],
                   link: "/solucoes/dashboard-analitico",
                   image:
                     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -338,7 +406,9 @@ export default function Home() {
                     <h3 className="mb-2 text-xl font-bold text-white dark:text-white light:text-green-800">
                       {solution.title}
                     </h3>
-                    <p className="mb-4 text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">{solution.desc}</p>
+                    <p className="mb-4 text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
+                      {solution.desc}
+                    </p>
 
                     <ul className="space-y-2">
                       {solution.features.map((feature, j) => (
@@ -370,66 +440,6 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-              {/* Adicione após os cards existentes */}
-              <div className="group relative overflow-hidden rounded-lg border bg-background p-2">
-                <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-                  <svg className="h-12 w-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
-                  </svg>
-                  <div className="space-y-2">
-                    <h3 className="font-bold">Simulação de Cenários</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Antecipe-se aos desafios e maximize seus resultados com simulações avançadas.
-                    </p>
-                  </div>
-                </div>
-                <Link
-                  href="/solucoes/simulacao-de-cenarios"
-                  className="absolute inset-0 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  <span className="sr-only">Saiba mais sobre Simulação de Cenários</span>
-                </Link>
-              </div>
-
-              <div className="group relative overflow-hidden rounded-lg border bg-background p-2">
-                <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-                  <svg className="h-12 w-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12,20A6,6 0 0,1 6,14C6,10 12,3.25 12,3.25C12,3.25 18,10 18,14A6,6 0 0,1 12,20Z" />
-                  </svg>
-                  <div className="space-y-2">
-                    <h3 className="font-bold">Gestão de Irrigação</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Otimize o uso da água e aumente a produtividade com irrigação inteligente.
-                    </p>
-                  </div>
-                </div>
-                <Link
-                  href="/solucoes/gestao-de-irrigacao"
-                  className="absolute inset-0 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  <span className="sr-only">Saiba mais sobre Gestão de Irrigação</span>
-                </Link>
-              </div>
-
-              <div className="group relative overflow-hidden rounded-lg border bg-background p-2">
-                <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-                  <svg className="h-12 w-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M9,17H7V10H9V17M13,17H11V7H13V17M17,17H15V13H17V17Z" />
-                  </svg>
-                  <div className="space-y-2">
-                    <h3 className="font-bold">Dashboard Analítico</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Visualize, analise e tome decisões baseadas em dados com nosso dashboard completo.
-                    </p>
-                  </div>
-                </div>
-                <Link
-                  href="/solucoes/dashboard-analitico"
-                  className="absolute inset-0 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  <span className="sr-only">Saiba mais sobre Dashboard Analítico</span>
-                </Link>
-              </div>
             </div>
           </div>
         </section>
@@ -492,7 +502,9 @@ export default function Home() {
                     <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-green-500/10 dark:bg-green-500/10 light:bg-green-500/20">
                       <feature.icon className="h-5 w-5 text-green-400 dark:text-green-400 light:text-green-600" />
                     </div>
-                    <div className="text-sm text-gray-300 dark:text-gray-300 light:text-gray-700">{feature.label}</div>
+                    <div className="text-sm text-gray-300 dark:text-gray-300 light:text-gray-700">
+                      {feature.label}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -575,8 +587,12 @@ export default function Home() {
                   </p>
 
                   <div>
-                    <p className="font-medium text-white dark:text-white light:text-green-800">{testimonial.name}</p>
-                    <p className="text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">{testimonial.role}</p>
+                    <p className="font-medium text-white dark:text-white light:text-green-800">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">
+                      {testimonial.role}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -602,8 +618,8 @@ export default function Home() {
                   Pronto para transformar sua produção?
                 </h2>
                 <p className="max-w-[600px] text-gray-300 md:text-xl/relaxed dark:text-gray-300 light:text-gray-700">
-                  Entre em contato e descubra como a AgroSinapse pode ajudar sua lavoura com tecnologia de ponta e
-                  análises precisas.
+                  Entre em contato e descubra como a AgroSinapse pode ajudar sua
+                  lavoura com tecnologia de ponta e análises precisas.
                 </p>
                 <div className="flex flex-col gap-3 sm:flex-row mt-4">
                   <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 h-12 px-6 dark:from-green-500 dark:to-emerald-600 dark:hover:from-green-600 dark:hover:to-emerald-700 light:from-green-600 light:to-emerald-700 light:hover:from-green-700 light:hover:to-emerald-800">
@@ -629,7 +645,9 @@ export default function Home() {
                       <div className="text-2xl font-bold text-white dark:text-white light:text-green-800">
                         {stat.value}
                       </div>
-                      <div className="text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">{stat.label}</div>
+                      <div className="text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">
+                        {stat.label}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -661,40 +679,62 @@ export default function Home() {
               </p>
             </div>
             <div className="space-y-4">
-              <h3 className="text-lg font-medium text-white dark:text-white light:text-green-800">Contato</h3>
-              <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">contato@agrosinapse.com.br</p>
-              <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">+55 (11) 9999-9999</p>
+              <h3 className="text-lg font-medium text-white dark:text-white light:text-green-800">
+                Contato
+              </h3>
+              <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
+                contato@agrosinapse.com.br
+              </p>
+              <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
+                +55 (11) 9999-9999
+              </p>
               <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
                 Av. Paulista, 1000 - São Paulo/SP
               </p>
             </div>
             <div className="space-y-4">
-              <h3 className="text-lg font-medium text-white dark:text-white light:text-green-800">Links Úteis</h3>
+              <h3 className="text-lg font-medium text-white dark:text-white light:text-green-800">
+                Links Úteis
+              </h3>
               <ul className="space-y-2 text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
                 <li>
-                  <Link href="#" className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600">
+                  <Link
+                    href="#"
+                    className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600"
+                  >
                     Política de Privacidade
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600">
+                  <Link
+                    href="#"
+                    className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600"
+                  >
                     Termos de Uso
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600">
+                  <Link
+                    href="#"
+                    className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600"
+                  >
                     FAQ
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600">
+                  <Link
+                    href="#"
+                    className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600"
+                  >
                     Blog
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="space-y-4">
-              <h3 className="text-lg font-medium text-white dark:text-white light:text-green-800">Redes Sociais</h3>
+              <h3 className="text-lg font-medium text-white dark:text-white light:text-green-800">
+                Redes Sociais
+              </h3>
               <div className="flex space-x-4">
                 <Link
                   href="#"
@@ -728,10 +768,13 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 border-t border-green-900/20 pt-8 text-center text-sm text-gray-400 dark:border-green-900/20 dark:text-gray-400 light:border-green-600/20 light:text-gray-600">
-            <p>© {new Date().getFullYear()} AgroSinapse. Todos os direitos reservados.</p>
+            <p>
+              © {new Date().getFullYear()} AgroSinapse. Todos os direitos
+              reservados.
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
