@@ -125,7 +125,7 @@ export default function Home() {
                   </Button>
                 </div>
 
-                <div className="flex items-center gap-4 pt-4">
+                {/* <div className="flex items-center gap-4 pt-4">
                   <div className="flex -space-x-2">
                     {[1, 2, 3, 4].map((i) => (
                       <div
@@ -140,7 +140,7 @@ export default function Home() {
                     </span>{" "}
                     produtores rurais confiam em nós
                   </p>
-                </div>
+                </div> */}
               </div>
               <div className="relative">
                 <div className="absolute inset-0 rounded-2xl bg-green-500/20 blur-2xl dark:bg-green-500/20 light:bg-green-500/30"></div>
