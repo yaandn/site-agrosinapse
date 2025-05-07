@@ -113,14 +113,16 @@ export default function Home() {
                   potencializando sua produtividade com tecnologia de ponta.
                 </p>
                 <div className="flex flex-col gap-3 sm:flex-row">
-                  <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 h-12 px-6 dark:from-green-500 dark:to-emerald-600 dark:hover:from-green-600 dark:hover:to-emerald-700 light:from-green-600 light:to-emerald-700 light:hover:from-green-700 light:hover:to-emerald-800">
-                    Conheça o AgroSinapse
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Button>
-                  <Link className="decoration-none" href="#parceria">
+                  <Link href="#sobre" className="decoration-none w-full">
+                    <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 h-12 px-6 dark:from-green-500 dark:to-emerald-600 dark:hover:from-green-600 dark:hover:to-emerald-700 light:from-green-600 light:to-emerald-700 light:hover:from-green-700 light:hover:to-emerald-800 w-full">
+                      Conheça o AgroSinapse
+                      <ChevronRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                  <Link className="decoration-none w-full" href="#parceria">
                     <Button
                       variant="outline"
-                      className="border-green-500/30 text-green-400 hover:bg-green-500/10 h-12 px-6 dark:border-green-500/30 dark:text-green-400 dark:hover:bg-green-500/10 light:border-green-600/30 light:text-green-600 light:hover:bg-green-500/10"
+                      className="border-green-500/30 text-green-400 hover:bg-green-500/10 h-12 px-6  w-full dark:border-green-500/30 dark:text-green-400 dark:hover:bg-green-500/10 light:border-green-600/30 light:text-green-600 light:hover:bg-green-500/10"
                     >
                       Seja um parceiro
                     </Button>
@@ -464,9 +466,6 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-white via-green-200 to-green-400 dark:from-white dark:via-green-200 dark:to-green-400 light:from-green-800 light:via-green-600 light:to-green-700">
                 Tecnologia ao seu alcance
               </h2>
-              <p className="max-w-[700px] text-gray-400 md:text-xl/relaxed dark:text-gray-400 light:text-gray-600">
-                Uma interface moderna e intuitiva para gerenciar sua lavoura
-              </p>
               <p className="max-w-[700px] text-gray-400 md:text-xl/relaxed dark:text-gray-400 light:text-gray-600">
                 Uma interface moderna e intuitiva para gerenciar sua lavoura
               </p>
@@ -815,7 +814,6 @@ export default function Home() {
               <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
                 +55 (62) 99827-3891
               </p>
-              
             </div>
 
             <div className="space-y-4">
