@@ -117,12 +117,14 @@ export default function Home() {
                     Conheça o AgroSinapse
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
-                  <Button
-                    variant="outline"
-                    className="border-green-500/30 text-green-400 hover:bg-green-500/10 h-12 px-6 dark:border-green-500/30 dark:text-green-400 dark:hover:bg-green-500/10 light:border-green-600/30 light:text-green-600 light:hover:bg-green-500/10"
-                  >
-                    Ver demonstração
-                  </Button>
+                  <Link className="decoration-none" href="#parceria">
+                    <Button
+                      variant="outline"
+                      className="border-green-500/30 text-green-400 hover:bg-green-500/10 h-12 px-6 dark:border-green-500/30 dark:text-green-400 dark:hover:bg-green-500/10 light:border-green-600/30 light:text-green-600 light:hover:bg-green-500/10"
+                    >
+                      Seja um parceiro
+                    </Button>
+                  </Link>
                 </div>
 
                 {/* <div className="flex items-center gap-4 pt-4">
@@ -195,9 +197,7 @@ export default function Home() {
                   <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-green-500/10 dark:bg-green-500/10 light:bg-green-500/20">
                     <stat.icon className="h-5 w-5 text-green-400 dark:text-green-400 light:text-green-600" />
                   </div>
-                  <div className="text-2xl font-bold text-white dark:text-white light:text-green-800">
-                    {stat.value}
-                  </div>
+
                   <div className="text-xs text-gray-400 dark:text-gray-400 light:text-gray-600">
                     {stat.label}
                   </div>
@@ -238,14 +238,19 @@ export default function Home() {
                   <Seedling className="mr-1 h-3 w-3" /> Nossa missão
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-white via-green-200 to-green-400 dark:from-white dark:via-green-200 dark:to-green-400 light:from-green-800 light:via-green-600 light:to-green-700">
-                  Sobre a AgroSinapse
+                  Sobre o AgroSinapse
                 </h2>
                 <p className="text-gray-400 dark:text-gray-400 light:text-gray-600">
-                  A AgroSinapse desenvolve soluções digitais com foco em análise
-                  de lavouras, identificação de pragas e simulação de cenários.
-                  Nossa missão é transformar dados em insights valiosos para o
-                  produtor rural, tornando a tomada de decisão mais precisa e
-                  eficiente.
+                  O AgroSinapse está atualmente em fase de desenvolvimento,
+                  criando soluções digitais inovadoras voltadas para o setor
+                  agrícola. Nosso foco está na análise inteligente de lavouras,
+                  na identificação automatizada de pragas e na simulação de
+                  cenários agronômicos. Estamos construindo uma plataforma que
+                  transforma dados em insights práticos e confiáveis, com o
+                  objetivo de auxiliar o produtor rural em decisões mais
+                  precisas, ágeis e embasadas. Nosso compromisso é com a
+                  inovação no campo, contribuindo para uma agricultura mais
+                  eficiente e sustentável.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
                   {[
@@ -513,7 +518,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 relative">
+        {/* <section className="w-full py-12 md:py-24 lg:py-32 relative">
           <div className="absolute inset-0 z-0">
             <div className="absolute top-20 left-10 w-72 h-72 bg-green-500/5 rounded-full blur-3xl dark:bg-green-500/5 light:bg-green-500/10"></div>
             <div className="absolute bottom-10 right-10 w-60 h-60 bg-emerald-500/5 rounded-full blur-3xl dark:bg-emerald-500/5 light:bg-emerald-500/10"></div>
@@ -598,6 +603,128 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </section> */}
+
+        {/* Partnership Section */}
+        <section
+          className="w-full py-12 md:py-24 lg:py-32 relative"
+          id="parceria"
+        >
+          <div className="absolute inset-0 z-0">
+            <div className="absolute top-40 left-20 w-80 h-80 bg-green-500/10 rounded-full blur-3xl dark:bg-green-500/10 light:bg-green-500/20"></div>
+            <div className="absolute bottom-20 right-20 w-60 h-60 bg-emerald-500/10 rounded-full blur-3xl dark:bg-emerald-500/10 light:bg-emerald-500/20"></div>
+            <div className="absolute inset-0 bg-[url('/grid-pattern.png')] bg-repeat opacity-5"></div>
+          </div>
+
+          <div className="container px-4 md:px-6 relative z-10">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+              <div className="inline-flex items-center rounded-full border border-green-500/30 bg-green-500/10 px-3 py-1 text-sm text-green-400 dark:border-green-500/30 dark:bg-green-500/10 dark:text-green-400 light:border-green-600/30 light:bg-green-500/10 light:text-green-600">
+                <Layers className="mr-1 h-3 w-3" /> Oportunidade de investimento
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-white via-green-200 to-green-400 dark:from-white dark:via-green-200 dark:to-green-400 light:from-green-800 light:via-green-600 light:to-green-700">
+                Seja Nosso Parceiro
+              </h2>
+              <p className="max-w-[700px] text-gray-400 md:text-xl/relaxed dark:text-gray-400 light:text-gray-600">
+                Estamos em busca de parceiros estratégicos para colaborar no
+                desenvolvimento da AgroSinapse
+              </p>
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold text-white dark:text-white light:text-green-800">
+                  Por que investir ?
+                </h3>
+                <ul className="space-y-4">
+                  {[
+                    {
+                      title: "Mercado em expansão",
+                      desc: "O agronegócio brasileiro representa mais de 25% do PIB nacional, com crescimento constante e demanda por soluções tecnológicas.",
+                      icon: LineChart,
+                    },
+                    {
+                      title: "Tecnologia inovadora",
+                      desc: "Nossa plataforma utiliza algoritmos de IA de ponta para análise de dados agrícolas, com resultados comprovados em produtividade.",
+                      icon: Brain,
+                    },
+                    {
+                      title: "Equipe especializada",
+                      desc: "Contamos com profissionais experientes em tecnologia e agronegócio, combinando conhecimento técnico e prático.",
+                      icon: Cpu,
+                    },
+                  ].map((item, i) => (
+                    <div
+                      key={i}
+                      className="rounded-xl border border-green-500/30 bg-black/40 backdrop-blur-sm p-4 dark:border-green-500/30 dark:bg-black/40 light:border-green-600/30 light:bg-white/40"
+                    >
+                      <div className="flex gap-4">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-500/10 dark:bg-green-500/10 light:bg-green-500/20">
+                          <item.icon className="h-5 w-5 text-green-400 dark:text-green-400 light:text-green-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-white dark:text-white light:text-green-800">
+                            {item.title}
+                          </h4>
+                          <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
+                            {item.desc}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </ul>
+              </div>
+              <div className="space-y-6 ">
+                <h3 className="text-2xl font-bold text-white dark:text-white light:text-green-800">
+                  Oportunidades
+                </h3>
+                <div className="grid gap-4">
+                  {[
+                    {
+                      title: "Investimento direto",
+                      desc: "Torne-se um investidor da AgroSinapse e participe do crescimento de uma empresa inovadora no setor agro.",
+                      icon: Activity,
+                    },
+                    {
+                      title: "Parcerias estratégicas",
+                      desc: "Colabore com recursos, conhecimento ou canais de distribuição para impulsionar o desenvolvimento da plataforma.",
+                      icon: Layers,
+                    },
+                    {
+                      title: "Acesso antecipado",
+                      desc: "Parceiros têm acesso prioritário a novas tecnologias e funcionalidades em desenvolvimento.",
+                      icon: ScanLine,
+                    },
+                  ].map((item, i) => (
+                    <div
+                      key={i}
+                      className="rounded-xl border border-green-500/30 bg-black/40 backdrop-blur-sm p-4 dark:border-green-500/30 dark:bg-black/40 light:border-green-600/30 light:bg-white/40"
+                    >
+                      <div className="flex gap-4">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-500/10 dark:bg-green-500/10 light:bg-green-500/20">
+                          <item.icon className="h-5 w-5 text-green-400 dark:text-green-400 light:text-green-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-white dark:text-white light:text-green-800">
+                            {item.title}
+                          </h4>
+                          <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
+                            {item.desc}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center pt-4 mt-8">
+              <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 h-12 px-6 dark:from-green-500 dark:to-emerald-600 dark:hover:from-green-600 dark:hover:to-emerald-700 light:from-green-600 light:to-emerald-700 light:hover:from-green-700 light:hover:to-emerald-800">
+                Quero ser um parceiro
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+          </div>
         </section>
 
         {/* CTA Section */}
@@ -623,7 +750,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col gap-3 sm:flex-row mt-4">
                   <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 border-0 h-12 px-6 dark:from-green-500 dark:to-emerald-600 dark:hover:from-green-600 dark:hover:to-emerald-700 light:from-green-600 light:to-emerald-700 light:hover:from-green-700 light:hover:to-emerald-800">
-                    Agende uma demonstração
+                    Entar na lista espera
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                   <Button
@@ -635,7 +762,7 @@ export default function Home() {
                 </div>
 
                 {/* Stats */}
-                <div className="mt-8 grid grid-cols-3 gap-4 pt-4 border-t border-green-500/20 dark:border-green-500/20 light:border-green-600/20">
+                {/* <div className="mt-8 grid grid-cols-3 gap-4 pt-4 border-t border-green-500/20 dark:border-green-500/20 light:border-green-600/20">
                   {[
                     { value: "+500", label: "Produtores" },
                     { value: "12", label: "Estados" },
@@ -650,7 +777,7 @@ export default function Home() {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -686,51 +813,11 @@ export default function Home() {
                 contato@agrosinapse.com.br
               </p>
               <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
-                +55 (11) 9999-9999
+                +55 (62) 99827-3891
               </p>
-              <p className="text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
-                Av. Paulista, 1000 - São Paulo/SP
-              </p>
+              
             </div>
-            <div className="space-y-4">
-              <h3 className="text-lg font-medium text-white dark:text-white light:text-green-800">
-                Links Úteis
-              </h3>
-              <ul className="space-y-2 text-sm text-gray-400 dark:text-gray-400 light:text-gray-600">
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600"
-                  >
-                    Política de Privacidade
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600"
-                  >
-                    Termos de Uso
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600"
-                  >
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-green-400 dark:hover:text-green-400 light:hover:text-green-600"
-                  >
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </div>
+
             <div className="space-y-4">
               <h3 className="text-lg font-medium text-white dark:text-white light:text-green-800">
                 Redes Sociais
