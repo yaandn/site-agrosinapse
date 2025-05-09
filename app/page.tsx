@@ -25,6 +25,9 @@ import {
   X,
 } from "lucide-react";
 
+import imageHome from "@/public/image-home.png";
+import imageEquipe from "@/public/image-equipe.jpg";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-black to-zinc-900 text-white dark:bg-gradient-to-b dark:from-black dark:to-zinc-900 light:bg-white light:text-zinc-900 transition-theme">
@@ -150,11 +153,11 @@ export default function Home() {
                 <div className="absolute inset-0 rounded-2xl bg-green-500/20 blur-2xl dark:bg-green-500/20 light:bg-green-500/30"></div>
                 <div className="relative rounded-2xl border border-green-500/30 bg-black/40 backdrop-blur-sm p-1 overflow-hidden dark:border-green-500/30 dark:bg-black/40 light:border-green-600/30 light:bg-white/40">
                   <Image
-                    src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={imageHome}
                     width={600}
                     height={400}
                     alt="Dashboard AgroSinapse"
-                    className="rounded-xl object-cover w-full"
+                    className="rounded-xl object-cover w-full h-96"
                   />
 
                   {/* Floating elements */}
@@ -222,7 +225,7 @@ export default function Home() {
                 <div className="absolute inset-0 rounded-2xl bg-green-500/20 blur-2xl dark:bg-green-500/20 light:bg-green-500/30"></div>
                 <div className="relative rounded-2xl border border-green-500/30 bg-black/40 backdrop-blur-sm p-1 dark:border-green-500/30 dark:bg-black/40 light:border-green-600/30 light:bg-white/40">
                   <Image
-                    src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={imageEquipe}
                     width={600}
                     height={400}
                     alt="Equipe AgroSinapse"
